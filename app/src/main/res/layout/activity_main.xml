@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+        <TextView
+            android:text="Introduce los operandos"
+            app:layout_column="0"
+            app:layout_row="0"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="1 operando"
+            app:layout_column="1"
+            android:id="@+id/caja1"
+            app:layout_row="1"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="2 operando"
+            android:id="@+id/caja2"
+            app:layout_column="1"
+            app:layout_row="3"/>
+
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:layout_columnSpan="@integer/material_motion_duration_medium_2"/>
+
+        <Button
+            android:id="@+id/igual"
+            app:layout_row="4"
+            app:layout_column="1"
+            android:text="igual"
+            android:onClick="operar"
+            />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solucion"
+            app:layout_row="5"
+            app:layout_column="1"/>
+
+</androidx.gridlayout.widget.GridLayout>
